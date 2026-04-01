@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    // 記錄 page view（含 UTM）
+    gtag('config', 'G-7GCJDFM10C');
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+
+  <script>
+    // 這裡填你的最終目的地
+    const target = "https://docs.google.com/presentation/d/1ooy4ZGFCA6qIP-yDZnmLDWkWw-YruBn2svB993UFhBY/edit?usp=sharing";
+
+    // 稍微延遲，確保 GA 有時間送出資料
+    setTimeout(() => {
+      window.location.href = target;
+    }, 500);
+  </script>
+</body>
+</html>
